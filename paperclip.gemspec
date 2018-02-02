@@ -9,7 +9,12 @@ Gem::Specification.new do |s|
   s.email             = ["jyurek@thoughtbot.com"]
   s.homepage          = "https://github.com/thoughtbot/paperclip"
   s.summary           = "File attachments as attributes for ActiveRecord"
-  s.description       = "Easy upload management for ActiveRecord"
+  s.description       = <<-EOF
+    Easy upload management for ActiveRecord
+    v5.3 update created as a fork to use until thoughtbot/paperclip#2481 is
+    merged and a new tag cut. This is for any projects that want to include
+    paperclip but also depend on aws-sdk >= v3.0.
+  EOF
   s.license           = "MIT"
 
   s.files         = `git ls-files`.split("\n")
